@@ -10,7 +10,8 @@ public class Lesson3 {
 //        System.out.println(sum(new int[] {2,6,98,64674}));  // declaring array!!!
 //        System.out.println(factorial(5));
 //        System.out.println(sort(new int[]{1, 4, -1, 256}));
-        System.out.println(reverseString("luuk"));
+//        System.out.println(reverseString("kuulilennuteetunneliluuk"));
+        System.out.println(isPrime(1));
 
     }
 
@@ -99,20 +100,29 @@ public class Lesson3 {
         System.out.println(a);
         // Use StringBuilder when manipulating Strings
         StringBuilder word = new StringBuilder();
-        for (int i = a.length(); i >= 0; i--) {
-            word.append(i);
+//        for (int i = ((a.length())-1); i == 0; i--) {
+         for (int i = a.length()-1; i >= 0; i--) {
+//            System.out.print(a.charAt(i));
+//            String b = (a.substring(i-1, i));    //hea meetod mida teada Stringidega manipuleerimiseks!!!
+//            word.append(a.charAt(i));
+            word.append(a.substring(i, i+1));      //uskumatu aga substring() lubab v]tta viimase t'he out of bounds tingimustes
         }
-
-        System.out.println(word);
-
+         String reverse = word.toString();      //casting type StringBuilder to String
+//        System.out.println(word);
+//        System.out.println(reverse);
 //        System.out.println(a.substring(1));
 
-        return "";
+        return reverse;     //NB! main method prints the result
     }
 
     public static boolean isPrime(int x){
         // TODO tagasta kas sisestatud arv on primaar arv (jagub ainult 1 ja iseendaga)
-        return false;
+        for (int i = 2; i < x; i++){    //loop goes until the test number itself
+            if (x % i == 0) {           //condition is that if there is no remaining
+                return false;
+            }
+        }
+        return true;
     }
 
 }

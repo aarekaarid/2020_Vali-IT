@@ -114,6 +114,12 @@ public class Lesson2 {
             b) prindib konsoolile päeva, mil külastajaid oli kõige rohkem.
             Faili asukoht tuleb programmile ette anda käsurea parameetrina.
          */
+
+        String a = "2018-01-13, 436";   // seda saab splittida
+        String[] b = a.split(", ");  // teeb kaheks ',' kohalt
+        System.out.println(b[0]);
+        System.out.println(b[1].trim());
+
     }
 
     public static void exercise7() {
