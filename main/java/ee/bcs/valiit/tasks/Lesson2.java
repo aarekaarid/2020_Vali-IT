@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Lesson2 {
 
-    public static void main(String[] args) { interviewtask(); }
+    public static void main(String[] args) { exercise5(22); }
 
     public static void exercise1() {
         // TODO loo 10 elemendile täisarvude massiv
@@ -100,12 +100,17 @@ public class Lesson2 {
         System.out.println("a: " + a + "/ b: " + b);
     }
 
-    public static void exercise5() {
+    public static void exercise5(int n) {
         // https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=36
         //todo1 tee alamfunktsioon mis leiab 3n+1 sequenci pikkuse
         // kui on paaris /2 kui on paaritu *3+1
         //todo2 tee tsükkel mis leiab i -> j kõige suurema tsükkli pikkuse
-    }
+//        if (n < 1){
+//            break;
+        }
+
+
+
 
     public static void exercise6() {
         /*

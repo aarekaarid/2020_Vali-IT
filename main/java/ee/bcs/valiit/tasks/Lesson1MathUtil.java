@@ -75,6 +75,11 @@ public class Lesson1MathUtil {
     public static int max(int a, int b) {
         // TODO tagasta a ja b suurim väärtus
         return Math.max(a, b);
+
+//        if (a > b) {
+//            return a;
+//        }
+//        return b;
     }
 
     public static int abs(int a) {
@@ -99,10 +104,10 @@ public class Lesson1MathUtil {
 
     public static int min(int a, int b, int c) {
         // TODO tagasta a, b ja c väikseim väärtus
-        int m = Math.min(a, b);
+        int m = Math.min(a, b);     //Math.min takes only 2 arguments
         return Math.min(m, c);
 
-//        int inner = min(a, b);
+//        int inner = min(a, b);    //using existing method min()
 //        return min(inner,c);
     }
 
@@ -110,7 +115,6 @@ public class Lesson1MathUtil {
         // TODO tagasta a, b ja c suurim väärtus
         int n = Math.max(a, b);
         return Math.max(n, c);
-//        return max(max(a, b), c);
+//        return max(max(a, b), c);     //using existing method max()
     }
-
 }
